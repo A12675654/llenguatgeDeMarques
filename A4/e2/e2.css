@@ -1,0 +1,35 @@
+#value1, #value2 {
+    background-color: silver;
+ }
+ 
+ 
+ .bigger {
+    font-size: 30px;
+    /**background-color: coral;**/
+    text-align: right;
+    color: blue;
+ }
+ 
+ 
+ body {
+    background-color: aquamarine;
+ }
+ 
+ 
+ p {
+    text-align: center;
+    color: blue;
+ }
+ 
+ 
+ h3 {
+    text-align: center;
+    color: blue;
+ }
+ 
+ 
+ h2 {
+    text-align: right;
+    color: blue;
+ }
+ 
