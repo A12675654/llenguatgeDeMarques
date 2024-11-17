@@ -1,0 +1,63 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Outer table styles */
+.outer-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px double black; /* Double-line border */
+}
+
+.outer-table td {
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle; /* Center content vertically */
+    padding: 10px;
+}
+
+/* Nested tables in the first and second columns */
+.nested-table {
+    border-collapse: collapse;
+    width: 100%; /* Full width by default */
+}
+
+.nested-table.small {
+    width: 70%; /* Smaller nested table */
+    margin: auto; /* Center the small table */
+}
+
+.nested-table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Third column with split sections for green checks */
+.split-cell {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove padding for the split cell */
+}
+
+.upper-square, .lower-square {
+    flex: 1; /* Equal height for both squares */
+    display: flex; /* For aligning the checkmark */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-bottom: 2px solid black; /* Separate the squares */
+}
+
+.lower-square {
+    border-bottom: none; /* No bottom border for the last square */
+}
+
+/* Checkmark styles */
+.checkmark {
+    font-size: 30px; /* Increase size for better visibility */
+    color: green;
+    font-weight: bold;
+    line-height: 1;
+}

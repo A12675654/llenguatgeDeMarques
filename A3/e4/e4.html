@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Table</title>
+    <link rel="stylesheet" href="e4.css">
+</head>
+<body>
+    <table class="outer-table">
+        <tr>
+            <!-- First Column with Smaller Nested Table -->
+            <td>
+                <table class="nested-table small">
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Second Column with Full-Width Nested Table -->
+            <td>
+                <table class="nested-table full">
+                    <tr>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Third Column Split for Green Checks -->
+            <td class="split-cell">
+                <!-- Upper Square -->
+                <div class="upper-square">
+                    <div class="checkmark">&#x2714;</div>
+                </div>
+
+                <!-- Lower Square -->
+                <div class="lower-square">
+                    <div class="checkmark">&#x2714;</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
