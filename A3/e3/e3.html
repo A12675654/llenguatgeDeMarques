@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-color: #d415bbad;}
+        </style>
+    </head>
+
+    <body>
+        <h4>A nested list</h4>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea
+                        <ul>
+                            <li>China</li>
+                            <li>Africa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+        </dl>
+        <dl>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+        <h4>Numbered list:</h4>
+        <ol>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemos</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Letters list:</h4>
+        <ol type="A">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemos</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Lowercase letters list:</h4>
+        <ol type="a">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemos</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Roman numbers list:</h4>
+        <ol type="I">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemos</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Lowercase roman numbers list:</h4>
+        <ol type="i">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemos</li>
+            <li>Oranges</li>
+        </ol>
+
+        <hr style="border: 1px solid #ffffff; width: 100%; margin: 5px auto;">
+            <p>
+                Link per enviar emails a una adreça determinada:<br/>
+            </p>
+            <a href="andrea.riba.7e7@itb.cat">Enviar email.</a>
+        <hr style="border: 1px solid #ffffff; width: 100%; margin: 5px auto;">
+
+            <h1>CREATE TABLE examples</h1>
+            <ul>
+                <li><a href="#a1">Basic CREATE TABLE statement</a></li>
+                <li><a href="#a2">Creating a table with a particular storage engine</a></li>
+                <li><a href="#a3">Creating a table with auto_increment</a></li>
+            </ul>
+            <h2 id="a1">Basic CREATE TABLE statement</h2>
+            <pre>
+A very basic CREATE TABLE statement which should work in any SQL database:
+                
+mysql&gt; CREATE TABLE example &#40;
+            id INT,
+            data VARCHAR&#40;100&#41;
+    &#41; ;
+Query OK, 0 rows affected &#40;0.03&#41;
+            </pre>
+
+            <h2 id="a2">Creating a table with a particular storage engine</h2>
+            
+            <p>MySQL provides a variety of different table types with differing levels of functionality. The most usual default, and most widely used, is MyISAM. Other storage types must be defined:</p>
+            <pre>
+mysql&gt; CREATE TABLE example_innodb &#40;
+            id INT,
+            data VARCHAR&#40;100&#41;
+            &#41; TYPE=innodb;
+Query OK, 0 rows affected &#40;0.03&#41;
+            </pre>
+            <p>
+                Note that beginning with MySQL 4.1 ENGINE=innodb is the preferred method of defining the storage type.<br/>
+                <br/>
+                Use SHOW CREATE TABLE &#40;see <a href="#">below</a>&#41;
+            </p>
+            <h2 id="a3">Creating a table with auto_increment</h2>
+
+            
+        </body>
+</html>
